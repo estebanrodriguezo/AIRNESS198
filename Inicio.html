@@ -5,42 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AIRNESS198</title>
-
+    <!--Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- Javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" />
   <body>
+    <div class="container">
+      <!-- Cabecera -->
     <header>
-      <nav>
-        <ul id="Left">
-          <a href="./Inicio.html">Inicio</a>
-          <a href="./Hombre.html">Hombre </a>
-          <a href="./Mujer.html">Mujer </a>
-          <a href="./Marcas.html">Marcas </a>
-        </ul>
-        <ul id="Rigth">
-          <a href="./Perfil.html">Perfil </a>
-          <a href="./Iniciar Sesion.html">Iniciar Sesion </a>
-          <a href="./Registro.html">Registro </a>
-        </ul>
+      <!-- Menu de navegacion -->
+      <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a href="./inicio.html" class="navbar-brand">AIRNESS198</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">INICIO</a>
+              </li>
+              <li><a class="nav-link" href="./Hombre.html">Hombre</a></li>
+              <li><a class="nav-link" href="./Mujer.html">Mujer </a></li>
+              <li><a class="nav-link" href="./Marcas.html">Marcas </a></li>
+            </ul>
+            
+            
+            <form action="#" class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                name="buscar"
+                placeholder="Buscar"
+              />
+              <button class="btn btn-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
       </nav>
-      <!-- Lista usada para organizar la pagina y dividirla en secciones  -->
+    
+  </header>
+  <!-- /Cabecera -->
+</div>
 
-      <center><h1>AIRNESS198</h1></center>
-      <!-- Titulo -->
-      <center>
-        <figure class="headerIcon">
-        <img
-          src="./Imagenes/airness bw.jpg"
-          width="500"
-          height="375"
-          alt="Our new company logo"
-          title="Logo de nuestra pagina"
-        />
-      </figure>
-      </center>
-      <br />
-      <!-- Logo de la pagina -->
-      </header> <!--Encabezado de la pagina web-->
+
+
+<!-- Jumbotron -->
+<section class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 text-center logo">
+              <img  src="./Imagenes/airness bw.jpg" alt="Our new company logo" title="Logo de nuestra pagina" />
+          </div>
+          <div class="col-sm-12 text-center">
+              <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modal_info"><img
+                      src="./Imagenes/iconos/person.png" class="icon" />INGRESAR</button>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Jumbotron -->
+
+
+
+
+<!-- ventana emergente ingresar -->
+<div class="modal fade" id="modal_info">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <!-- header -->
+          <div class="modal-header">
+              <h4 class="modal-title">INICIAR SESION / REGISTRARSE</h4>
+              <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- body -->
+          <div class="modal-body">
+              <form>
+                  <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Usuario:</label>
+                      <input type="text" name="user" class="form-control col-sm-6"
+                          placeholder="Ingrese su Nickname">
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Password: </label>
+                      <input type="password" name="pass" class="form-control col-sm-6">
+                  </div>
+                  <div class="form-group text-center">
+                      <button class="btn btn-dark col-md-8 ">Iniciar sesion</button>
+                  </div>
+              </form>
+              <br>
+              <form>
+                  <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Nombre:</label>
+                      <input type="text" name="user" class="form-control col-sm-6"
+                          placeholder="Ingrese su nombre completo">
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Nickname:</label>
+                      <input type="text" name="Nickname" class="form-control col-sm-6">
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Correo:</label>
+                      <input type="email" name="email" class="form-control col-sm-6">
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Password: </label>
+                      <input type="password" name="pass" class="form-control col-sm-6">
+                  </div>
+
+                  <div class="form-group text-center">
+                      <button class="btn btn-dark col-md-8 ">Registrarse</button>
+                  </div>
+              </form>
+          </div>
+
+          <!-- footer -->
+          <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ventana emergente ingresar -->
+
+
+
+
     <section>
       <center>
         <h2>Nuestras Secciones</h2>
@@ -69,15 +187,17 @@
             title="Nuestras Marcas"
         /></a>
       </center>
-      </section><!--Informacion general y contenido de la pagina-->
-    <section> 
-       <p>
-        <article>
+    </section>
+   
+      <footer>
+         <!--Informacion general y contenido de la pagina-->
+    <section>
+      <article>
         Somos el destino indiscutible de los amantes de productos de moda
         urbana, ofrecemos las marcas más reconocidas, productos más exclusivos,
         servicio y experiencias únicas.<br />
-      </article><!--Objetivo de nuestra marca-->
-      <footer>
+      </article>
+      <!--Objetivo de nuestra marca-->
         Tienda virtual<br />
         Streetwear and sneakers<br />
         Envios a todo el pais<br />
@@ -86,7 +206,7 @@
         Contactanos en:<br />
         <a href="https://www.instagram.com/airness198/">
           <img
-            src="./Imagenes/R.Sociales/INSTAGRAM.jpg"
+            src="./Imagenes/R.Sociales/INSTAGRAM.png"
             width="100"
             height="100"
             alt="Intagram"
@@ -94,26 +214,18 @@
         /></a>
         <a href="https://wa.me/+573182123272">
           <img
-            src="./Imagenes/R.Sociales/WPP.jpg"
+            src="./Imagenes/R.Sociales/WPP.png"
             width="93"
             height="93"
             alt="Whatsapp"
             title="Contacto de nuestra pagina"
-        /></a> <!-- Contacto y redes sciales de nuestra pagina -->
-      </footer><!--Pie de pagina en el cual se añadio la informacion de contacto de la marca y especificaciones de la misma-->
-        <br />
-      </p>
-      </section> <!--Informacion final de la pagina-->
-    <section>
-        <audio controls  id="Yo visto asi">
-          <source src="./Audios/YO VISTO ASI.mp3" type="audio/mpeg" />
-        </audio> <!--Audio de fondo para dar ambiente a la pagina web-->
-        <script>
-          var audio = document.getElementById("Yo visto asi");
-          audio.volume = 0.01;
-        </script><!--Uso de script para regular el volumen del audio-->
-      </section><!--Musica de fondo-->
-
-
+        /></a>
+        <!-- Contacto y redes sciales de nuestra pagina -->
+      </footer>
+      <!--Pie de pagina en el cual se añadio la informacion de contacto de la marca y especificaciones de la misma-->
+    
+    </section>
+    <!--Informacion final de la pagina-->
+  
   </body>
 </html>
