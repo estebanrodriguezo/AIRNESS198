@@ -1,0 +1,47 @@
+*{
+    border: 1px solid blue;
+}
+
+#parrafo1{
+    border-width: 5px;
+    border-style: dotted ;
+    width: 50%;
+    
+}
+
+footer{
+    
+    border: 5px solid red;
+    border-style: dotted ;
+    border-width: 5px 10px 15px 20px;
+}
+header{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: darkseagreen;
+    font-family:monospace;
+    font-size: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+nav{
+
+    font-family:fantasy;
+    font-size: 50px;
+    background-color:rgb(255, 244, 233);
+
+}
+
+section{
+
+    font-size: medium;
+    border: inherit;
+    padding: 10px; 
+    margin: 200px;
+}
+
+figure.headerIcon{
+    
+    background-color: black;
+}
