@@ -109,6 +109,11 @@ h2 {
   float: left;
   width: 100%;
 }
+#carousel{
+  padding: 0%;
+  margin: 0%;
+  background-color: black;
+}
 
 .hombreCard {
   float: left;
@@ -140,16 +145,3 @@ footer {
 }
 /* FOOTER */
 
-/* UNIVERSIDAD PAGE */
-
-.carousel-inner img {
-  width: 100%;
-}
-.carousel-caption h3 {
-  text-shadow: 5px 5px 5px black;
-  font-size: 3em;
-}
-.img-p {
-  width: 20%;
-}
-/* UNIVERSIDAD PAGE */
