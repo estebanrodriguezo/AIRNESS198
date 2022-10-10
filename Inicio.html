@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AIRNESS198</title>
-    <link rel="icon" type="image/jpg" href="./Imagenes/airness.jpg">
-    
+    <link rel="icon" type="image/jpg" href="./Imagenes/airness.jpg" />
+
     <!--Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -32,139 +32,445 @@
     ></script>
   </head>
 
-
-
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <body>
     <div class="container">
       <!-- Cabecera -->
-    <header>
-      <!-- Menu de navegacion -->
-      <nav class="navbar fixed-top  navbar-expand-md navbar-dark ">
-        <div class="container-fluid ">
-          <a href="./inicio.html" class="navbar-brand">AIRNESS198</a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="menu" class="collapse navbar-collapse  ">
-            <ul class="navbar-nav  mr-auto" >
-              <li class="nav-item active">
-                <a class="nav-link" href="#">INICIO</a>
-              </li>
-              <li><a class="nav-link" href="./Hombre.html">HOMBRE</a></li>
-              <li><a class="nav-link" href="./Mujer.html">MUJER </a></li>
-              <li><a class="nav-link" href="./Marcas.html">MARCAS </a></li>
-            </ul>
-            
-            
-            <form action="#" class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                name="buscar"
-                placeholder="Buscar"
-              />
-              <button class="btn btn-dark" type="submit">Buscar</button>
-            </form>
+      <header>
+        <!-- Menu de navegacion -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+          <div class="container-fluid">
+            <a href="./inicio.html" class="navbar-brand">AIRNESS198</a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li><a class="nav-link" href="./Hombre.html">HOMBRE</a></li>
+                <li><a class="nav-link" href="./Mujer.html">MUJER </a></li>
+                <li><a class="nav-link" href="./Marcas.html">MARCAS </a></li>
+              </ul>
+
+              <form action="#" class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  name="buscar"
+                  placeholder="Buscar"
+                />
+                <button class="btn btn-dark" type="submit">Buscar</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-    
-  </header>
-  <!-- /Cabecera -->
-</div>
+        </nav>
+      </header>
+      <!-- /Cabecera -->
+    </div>
 
-
-
-<!-- Jumbotron -->
-<section class="jumbotron">
-  <div class="container">
-      <div class="row">
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row">
           <div class="col-sm-12 text-center logo">
-              <img  src="./Imagenes/airness bw.jpg" alt="Our new company logo" title="Logo de nuestra pagina" />
+            <img
+              src="./Imagenes/airness bw.jpg"
+              alt="Our new company logo"
+              title="Logo de nuestra pagina"
+            />
           </div>
           <div class="col-sm-12 text-center">
-              <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modal_info"><img
-                      src="./Imagenes/iconos/person.png" class="icon" />INGRESAR</button>
+            <button
+              class="btn btn-dark"
+              type="button"
+              data-toggle="modal"
+              data-target="#modal_info"
+            >
+              <img src="./Imagenes/iconos/person.png" class="icon" />INGRESAR
+            </button>
           </div>
+        </div>
       </div>
-  </div>
-</section>
-<!-- Jumbotron -->
+    </section>
+    <!-- Jumbotron -->
 
-
-
-
-<!-- ventana emergente ingresar -->
-<div class="modal fade" id="modal_info">
-  <div class="modal-dialog">
-      <div class="modal-content">
+    <!-- ventana emergente ingresar -->
+    <div class="modal fade" id="modal_info">
+      <div class="modal-dialog">
+        <div class="modal-content">
           <!-- header -->
           <div class="modal-header">
-              <h4 class="modal-title">INICIAR SESION / REGISTRARSE</h4>
-              <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">INICIAR SESION / REGISTRARSE</h4>
+            <button class="close" data-dismiss="modal">&times;</button>
           </div>
 
           <!-- body -->
           <div class="modal-body">
-              <form>
-                  <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Usuario:</label>
-                      <input type="text" name="user" class="form-control col-sm-6"
-                          placeholder="Ingrese su Nickname">
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Password: </label>
-                      <input type="password" name="pass" class="form-control col-sm-6">
-                  </div>
-                  <div class="form-group text-center">
-                      <button class="btn btn-dark col-md-8 ">Iniciar sesion</button>
-                  </div>
-              </form>
-              <br>
-              <form>
-                  <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Nombre:</label>
-                      <input type="text" name="user" class="form-control col-sm-6"
-                          placeholder="Ingrese su nombre completo">
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Nickname:</label>
-                      <input type="text" name="Nickname" class="form-control col-sm-6">
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Correo:</label>
-                      <input type="email" name="email" class="form-control col-sm-6">
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Password: </label>
-                      <input type="password" name="pass" class="form-control col-sm-6">
-                  </div>
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Usuario:</label>
+                <input
+                  type="text"
+                  name="user"
+                  class="form-control col-sm-6"
+                  placeholder="Ingrese su Nickname"
+                />
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Password: </label>
+                <input
+                  type="password"
+                  name="pass"
+                  class="form-control col-sm-6"
+                />
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-dark col-md-8">Iniciar sesion</button>
+              </div>
+            </form>
+            <br />
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Nombre:</label>
+                <input
+                  type="text"
+                  name="user"
+                  class="form-control col-sm-6"
+                  placeholder="Ingrese su nombre completo"
+                />
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Nickname:</label>
+                <input
+                  type="text"
+                  name="Nickname"
+                  class="form-control col-sm-6"
+                />
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Correo:</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control col-sm-6"
+                />
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Password: </label>
+                <input
+                  type="password"
+                  name="pass"
+                  class="form-control col-sm-6"
+                />
+              </div>
 
-                  <div class="form-group text-center">
-                      <button class="btn btn-dark col-md-8 ">Registrarse</button>
-                  </div>
-              </form>
+              <div class="form-group text-center">
+                <button class="btn btn-dark col-md-8">Registrarse</button>
+              </div>
+            </form>
           </div>
 
           <!-- footer -->
           <div class="modal-footer">
-              <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
           </div>
+        </div>
       </div>
-  </div>
-</div>
-<!-- ventana emergente ingresar -->
+    </div>
+    <!-- ventana emergente ingresar -->
+
+    <!-- Carousel -->
+
+    <section id="loMasBuscado">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="carousel-main" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper">
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Hombre/BILLIE EILLISH X MURAKAMI.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Hombre/FEAR OF GOD - ESSENTIALS B.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Hombre/YEEZY 350 V2 BONE.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="cards-wrapper">
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Mujer/DUNK LOW FIRST USE (RED).jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Mujer/Nike X Stussy.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Mujer/YEEZY SLIDES ONYX.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="cards-wrapper">
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Marcas/champion.png"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Marcas/Vans.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="image-wrapper">
+                        <img
+                          src="./Imagenes/Marcas/versace.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-dark">Añadir al carrito</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#carousel-main"
+                class="carousel-control-prev"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a
+                href="#carousel-main"
+                class="carousel-control-next"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </a>
+
+              <ul class="carousel-indicators">
+                <li
+                  data-target="#carousel-main"
+                  class="active"
+                  data-slide-to="0"
+                ></li>
+                <li data-target="#carousel-main" data-slide-to="1"></li>
+                <li data-target="#carousel-main" data-slide-to="2"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+
+    <!-- NUESTRAS SECCIONES -->
+    <section id="hombres" >
+    
+      <div class="container">>
+        <h2>HOMBRES</h2>
+        
+        <a href="./Hombre.html" class="hombreCard">
+          <img
+            src="./Imagenes/Hombre/STW MAN.jpg"
+            alt="Streetwear Hombres"
+            title="Seccion de Hombres"
+        />
+      </a>
+      <br><br><br><br><br><br><br>
+      <div class="card hombreCard" style="width: 18rem;">
+        <img src="./Imagenes/Hombre/YEEZY SLIDES OCHRE.jpg"  alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card hombreCard" style="width: 18rem;">
+        <img src="./Imagenes/Hombre/FEAR OF GOD - ESSENTIALS B.jpg"  alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
 
 
 
 
-    <section>
+
+    </div>
+        
+      
+    </section>
+
+    <section id="mujeres" >
+    
+      <div class="container">>
+        <h2>MUJERES</h2>
+        
+        <a href="./Mujer.html" class="mujerCard">
+          <img
+            src="./Imagenes/Mujer/STW WOMAN.jpg"
+            alt="Streetwear Hombres"
+            title="Seccion de Hombres"
+        />
+      </a>
+      <br><br><br><br><br><br><br>
+      <div class="card mujerCard" style="width: 18rem;">
+        <img src="./Imagenes/Mujer/YEEZY SLIDES SOOT.jpg"  alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card mujerCard" style="width: 18rem;">
+        <img src="./Imagenes/Mujer/Nike X Stussy.jpg"  alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+        
+      
+    </section>
+
+
+
+    <section id="hombres">
       <center>
         <h2>Nuestras Secciones</h2>
         <a href="./Mujer.html">
@@ -193,16 +499,20 @@
         /></a>
       </center>
     </section>
-   
-      <footer>
-         <!--Informacion general y contenido de la pagina-->
-    <section>
+
+
+    <!-- NUESTRAS SECCIONES -->
+
+    <footer>
+      <!--Informacion general y contenido de la pagina-->
+
       <article>
         Somos el destino indiscutible de los amantes de productos de moda
         urbana, ofrecemos las marcas más reconocidas, productos más exclusivos,
         servicio y experiencias únicas.<br />
       </article>
-      <!--Objetivo de nuestra marca-->
+      <section>
+        <!--Objetivo de nuestra marca-->
         Tienda virtual<br />
         Streetwear and sneakers<br />
         Envios a todo el pais<br />
@@ -225,12 +535,10 @@
             alt="Whatsapp"
             title="Contacto de nuestra pagina"
         /></a>
-        <!-- Contacto y redes sciales de nuestra pagina -->
-      </footer>
-      <!--Pie de pagina en el cual se añadio la informacion de contacto de la marca y especificaciones de la misma-->
-    
-    </section>
-    <!--Informacion final de la pagina-->
-  
+      </section>
+
+      <!-- Contacto y redes sciales de nuestra pagina -->
+    </footer>
+    <!--Pie de pagina en el cual se añadio la informacion de contacto de la marca y especificaciones de la misma-->
   </body>
 </html>
