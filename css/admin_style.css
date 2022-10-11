@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-   --pink:#e84393;
+   
    --red:#c0392b;
    --orange:#f39c12;
-   --black:#333;
+   --black:rgb(0, 0, 0);
    --white:#fff;
    --light-color:#666;
    --light-white:#ccc;
@@ -23,7 +23,7 @@
 }
 
 *::selection{
-   background-color: var(--pink);
+   background-color: var(--black);
    color:var(--white);
 }
 
@@ -37,7 +37,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--pink);
+   background-color: var(--black);
 }
 
 html{
@@ -118,7 +118,7 @@ section{
 }
 
 .btn{
-   background-color: var(--pink);
+   background-color: var(--black);
 }
 
 .delete-btn{
@@ -145,7 +145,7 @@ section{
    position: sticky;
    top:0; left:0; right:0;
    z-index: 1000;
-   background-color: var(--white);
+   background-color: var(--black);
    box-shadow: var(--box-shadow);
 }
 
@@ -179,13 +179,13 @@ section{
 
 .header .flex .account-box p{
    padding-bottom: 1rem;
-   font-size: 2rem;
+   font-size: 1.5rem;
    color:var(--light-color);
    line-height: 1.5;
 }
 
 .header .flex .account-box p span{
-   color:var(--pink);
+   color:var(--black);
 }
 
 .header .flex .account-box div{
@@ -206,11 +206,11 @@ section{
    font-size: 2.5rem;
    margin-left: 1.7rem;
    cursor: pointer;
-   color:var(--black);
+   color:var(--white);
 }
 
 .header .flex .icons div:hover{
-   color:var(--pink);
+   color:var(--light-color);
 }
 
 .header .flex .navbar a{
@@ -221,16 +221,16 @@ section{
 
 .header .flex .navbar a:hover{
    text-decoration: underline;
-   color:var(--pink);
+   color:var(--light-white);
 }
 
 .header .flex .logo{
    font-size: 2.5rem;
-   color:var(--black);
+   color:var(--white);
 }
 
 .header .flex .logo span{
-   color:var(--pink);
+   color:var(--light-color);
 }
 
 #menu-btn{
@@ -330,7 +330,7 @@ section{
 }
 
 .show-products .box-container .box .price{
-   background-color: var(--pink);
+   background-color: var(--black);
    position: absolute;
    top:1rem; left:1rem;
    border-radius: .5rem;
@@ -417,7 +417,7 @@ section{
 }
 
 .placed-orders .box-container .box p span{
-   color:var(--pink);
+   color:var(--black);
 }
 
 .placed-orders .box-container .box form{
@@ -463,7 +463,7 @@ section{
 }
 
 .users .box-container .box p span{
-   color:var(--pink);
+   color:var(--black);
 }
 
 .users .box-container .box .delete-btn{
@@ -496,7 +496,7 @@ section{
 }
 
 .messages .box-container .box p span{
-   color:var(--pink);
+   color:var(--black);
 }
 
 

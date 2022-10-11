@@ -52,12 +52,11 @@ if(isset($_POST['submit'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Iniciar sesion</title>
    <link rel="icon" type="image/jpg" href="./Imagenes/airness.jpg" />
+    <!-- font awesome cdn link uso de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="./css/styleAir.css">
+    <!-- estilo de css   -->
+    <link rel="stylesheet" href="./css/styleAir.css">
 
 </head>
 <body>
@@ -79,6 +78,15 @@ if(isset($message)){
 
    <form action="" method="post">
       <h3>Iniciar sesion</h3>
+      <div class="image-wrapper" >
+      <img
+      
+              src="./Imagenes/airness.jpg"
+              alt="Our new company logo"
+              title="Logo de nuestra pagina"
+             
+            />
+            </div>
       <input type="email" name="email" class="box" placeholder="Ingresar correo electronico" required>
       <input type="password" name="pass" class="box" placeholder="Ingresar contraseña" required>
       <input type="submit" class="btn" name="submit" value="Ingresar">

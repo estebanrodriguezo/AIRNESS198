@@ -69,6 +69,15 @@ if (isset($_POST['submit'])) {
 
         <form action="" method="post">
             <h3>Registrate</h3>
+            <div class="image-wrapper" >
+      <img
+      
+              src="./Imagenes/airness.jpg"
+              alt="Our new company logo"
+              title="Logo de nuestra pagina"
+             
+            />
+            </div>
             <input type="text" name="name" class="box" placeholder="Ingresar nombre de usuario" required>
             <input type="email" name="email" class="box" placeholder="Ingresar correo electronico" required>
             <input type="password" name="pass" class="box" placeholder="Ingresar contraseña" required>
