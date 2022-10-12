@@ -21,6 +21,7 @@
    outline: none; border:none;
    text-decoration: none;
    transition:all .2s linear;
+   
 }
 
 *::selection{
@@ -133,7 +134,7 @@ section{
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
+   background-color: var(--light-color);
 }
 
 @keyframes fadeIn{
@@ -274,7 +275,8 @@ section{
    margin-top: 2rem;
    font-size: 1.7rem;
 }
-
+ 
+/* PRODUCTS */
 .add-products form{
    max-width: 50rem;
    border-radius: .5rem;
@@ -330,12 +332,12 @@ section{
 }
 
 .show-products .box-container .box .image{
-   height: 30rem;
+   height: 20rem;
    margin-bottom: .5rem;
 }
 
 .show-products .box-container .box .price{
-   background-color: var(--black);
+   background-color: var(--light-color);
    position: absolute;
    top:1rem; left:1rem;
    border-radius: .5rem;
@@ -396,6 +398,7 @@ section{
    border:var(--border);
    border-radius: .5rem;
 }
+/* PRODUCTS */
 
 .placed-orders .box-container{
    display: grid;
