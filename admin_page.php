@@ -40,7 +40,7 @@ if(!isset($admin_id)){
       <div class="box">
          <?php
             $total_pendings = 0;
-            $select_pendings = mysqli_query($conn, "SELECT * FROM `orders` WHERE payment_status = 'pending'") or die('query failed');
+            $select_pendings = mysqli_query($conn, "SELECT * FROM `orders` WHERE payment_status = 'pendiente'") or die('query failed');
             while($fetch_pendings = mysqli_fetch_assoc($select_pendings)){
                $total_pendings += $fetch_pendings['total_price'];
             };
@@ -52,7 +52,7 @@ if(!isset($admin_id)){
       <div class="box">
          <?php
             $total_completes = 0;
-            $select_completes = mysqli_query($conn, "SELECT * FROM `orders` WHERE payment_status = 'completed'") or die('query failed');
+            $select_completes = mysqli_query($conn, "SELECT * FROM `orders` WHERE payment_status = 'completado'") or die('query failed');
             while($fetch_completes = mysqli_fetch_assoc($select_completes)){
                $total_completes += $fetch_completes['total_price'];
             };
