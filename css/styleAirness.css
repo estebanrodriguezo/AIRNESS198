@@ -39,6 +39,13 @@
 *::-webkit-scrollbar-thumb{
    background-color: var(--black);
 }
+
+.image-wrapper img {
+   max-width: 80%;
+   max-height: 80%;
+ }
+
+
 a:hover{
    text-decoration: none;
    color: var(--white);
