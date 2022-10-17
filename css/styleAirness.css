@@ -171,7 +171,8 @@ section{
 }
 
 .heading p a{
-   color:var(--black);
+   color: var(--white);
+   
 }
 
 .heading p a:hover{
