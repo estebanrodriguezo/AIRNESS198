@@ -37,6 +37,58 @@ if(!isset($user_id)){
 </section>
 
 
+<section class="about">
+
+    <div class="flex">
+
+        <div class="image">
+            <img src="./Imagenes/STW.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>¿Por qué Airness?</h3>
+            <p>Por ser una tienda exclusiva con productos premium de marcas como: nike sportswear y lanzamientos únicos y exclusivos en el país, le damos a nuestros clientes y consumidores
+            una sensación de ser únicos al momento de vestir y, gracias a que el término hype en terminología coloquial en USA significa valorar al máximo una idea o producto, queremos que
+            nuestros clientes sientan el hype con la exclusividad de los mismos.</p>
+            <a href="shop.php" class="btn">Comprar ahora</a>
+        </div>
+
+    </div>
+
+    <div class="flex">
+
+        <div class="content">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>Mantener a los clientes actualizados con los nuevos estilos y, ocasionalmente, incluso ofrecer beneficios por su apoyo.</p>
+            <a href="contact.php" class="btn">Contactanos</a>
+        </div>
+
+        <div class="image">
+            <img src="./Imagenes/STW4.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="flex">
+
+        <div class="image">
+            <img src="./Imagenes/STW6.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>¿Quienes somos?</h3>
+            <p>Somos una de las primeras concept stores de Colombia, especializadas en sneakers, sportwear, y accesorios para el día a día. Nuestro objetivo principal es poderle brindar a nuestros clientes los últimos lanzamientos a nivel mundial en cuanto a sneakers y sportwear, acompañándolos paso a paso con la mejor asesoría especializada en cuanto historia, tecnología, rendimiento y comodidad.</p>
+            <a href="#reviews" class="btn">Comentarios</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
 <?php @include 'footer.php'; ?>
 
 <script src="./js/script.js"></script>
