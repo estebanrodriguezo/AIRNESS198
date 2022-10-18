@@ -78,7 +78,6 @@ if(!isset($user_id)){
         <div class="content">
             <h3>¿Quienes somos?</h3>
             <p>Somos una de las primeras concept stores de Colombia, especializadas en sneakers, sportwear, y accesorios para el día a día. Nuestro objetivo principal es poderle brindar a nuestros clientes los últimos lanzamientos a nivel mundial en cuanto a sneakers y sportwear, acompañándolos paso a paso con la mejor asesoría especializada en cuanto historia, tecnología, rendimiento y comodidad.</p>
-            <a href="#reviews" class="btn">Comentarios</a>
         </div>
 
     </div>
