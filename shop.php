@@ -81,7 +81,7 @@ if(isset($_POST['add_to_cart'])){
 
 <section class="heading">
     <h3>Nuestra tienda</h3>
-    <p> <a href="home.php">Inicio</a> / tienda </p>
+    <p> <a href="home.php">Inicio</a> / Tienda </p>
 </section>
 
 
