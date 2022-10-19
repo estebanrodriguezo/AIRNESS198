@@ -298,7 +298,7 @@ section{
 .header .flex .navbar ul li ul{
    position: absolute;
    left:0;
-   width: 15rem;
+   width: 17rem;
    background-color: var(--white);
    animation: fadeIn .2s linear;
    display: none;
@@ -1055,7 +1055,7 @@ section{
 
    .header .flex .navbar ul li{
       width: 100%;
-      padding:.5rem;
+      padding:.7rem;
    }
 
    .header .flex .navbar ul li ul{
@@ -1067,6 +1067,7 @@ section{
 
    .header .flex .navbar ul li ul li{
       padding-left: 2rem;
+      padding-right: 2rem;
    }
 
    .home .content h3{

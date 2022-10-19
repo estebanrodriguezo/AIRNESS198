@@ -23,7 +23,7 @@ if(isset($message)){
                 <li><a href="#">PAGINAS+</a>
                     <ul>
                         <li><a href="about.php">SOBRE NOSOTROS</a></li>
-                        <li><a href="contact.php">CONTACTO</a></li>
+                        <li><a href="contact.php">CONTACTANOS</a></li>
                     </ul>
                 </li>
                 <li><a href="shop.php">TIENDA</a></li>
