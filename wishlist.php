@@ -54,6 +54,13 @@ if(!isset($user_id)){
     <a href="wishlist.php?delete=<?php echo $fetch_wishlist['id']; ?>" class="fas fa-times" onclick="return confirm('Eliminar de la lista de deseos?');"></a>
     <a href="view_page.php?pid=<?php echo $fetch_wishlist['pid']; ?>" class="fas fa-eye"></a>
     <img src="imagenes_subidas/<?php echo $fetch_wishlist['image']; ?>" alt="" class="image">
+    <div class="name"><?php echo $fetch_wishlist['name']; ?></div>
+    <div class="price">$<?php echo $fetch_wishlist['price']; ?>/-</div>
+    <input type="hidden" name="product_id" value="<?php echo $fetch_wishlist['pid']; ?>">
+    <input type="hidden" name="product_name" value="<?php echo $fetch_wishlist['name']; ?>">
+    <input type="hidden" name="product_price" value="<?php echo $fetch_wishlist['price']; ?>">
+    <input type="hidden" name="product_image" value="<?php echo $fetch_wishlist['image']; ?>">
+    <input type="submit" value="Añadir al carrito" name="add_to_cart" class="btn">
 
     </form>
 
@@ -67,7 +74,13 @@ if(!isset($user_id)){
     ?>
     </div>
 
-    </section>
+    <div class="wishlist-total">
+        <p>Cuenta total : <span>$<?php echo $grand_total; ?>/-</span></p>
+        <a href="shop.php" class="option-btn">Continuar comprando</a>
+        <a href="wishlist.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>" onclick="return confirm('Desea vaciar la lista de deseos?');">Vaciar lista de deseos</a>
+    </div>
+
+</section>
 
 
 
