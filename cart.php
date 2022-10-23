@@ -42,8 +42,8 @@ if(isset($_POST['update_quantity'])){
      <!-- font awesome cdn link uso de iconos -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<!-- estilo de css   -->
-<link rel="stylesheet" href=".///css/styleAirness.css">
+    <!-- estilo de css   -->
+    <link rel="stylesheet" href=".///css/styleAirness.css">
 
 </head>
 <body>
@@ -103,8 +103,7 @@ if(isset($_POST['update_quantity'])){
     <div class="cart-total">
         <p>Cuenta total : <span>$<?php echo $grand_total; ?>/-</span></p>
         <a href="shop.php" class="option-btn">Continuar comprando</a>
-        <a href="cart
-        .php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>">Iniciar el pago</a>
+        <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>">Iniciar el pago</a>
     </div>
 
 </section>
