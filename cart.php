@@ -8,6 +8,24 @@ $user_id = $_SESSION['user_id'];
 
 if(!isset($user_id)){
    header('location:login.php');
+};
+
+if(isset($_GET['delete'])){
+    $delete_id = $_GET['delete'];
+    mysqli_query($conn, "DELETE FROM `cart` WHERE id = '$delete_id'") or die('query failed');
+    header('location:cart.php');
+}
+
+if(isset($_GET['delete_all'])){
+    mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+    header('location:cart.php');
+};
+
+if(isset($_POST['update_quantity'])){
+    $cart_id = $_POST['cart_id'];
+    $cart_quantity = $_POST['cart_quantity'];
+    mysqli_query($conn, "UPDATE `cart` SET quantity = '$cart_quantity' WHERE id = '$cart_id'") or die('query failed');
+    $message[] = 'Cantidad de productos actualizados!';
 }
 
 ?>
@@ -52,34 +70,42 @@ if(!isset($user_id)){
             while($fetch_cart = mysqli_fetch_assoc($select_cart)){
     ?>
 
-<div class="box">
+    <div class="box">
 
-    <a href="cart
-    .php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('Eliminar de la lista de deseos?');"></a>
-    <a href="view_page.php?pid=<?php echo $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
-    <img src="imagenes_subidas/<?php echo $fetch_cart['image']; ?>" alt="" class="image">
-    <div class="name"><?php echo $fetch_cart['name']; ?></div>
-    <div class="price">$<?php echo $fetch_cart['price']; ?>/-</div>
-   
-</div>
+        <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('Eliminar de la lista de deseos?');"></a>
+        <a href="view_page.php?pid=<?php echo $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
+        <img src="imagenes_subidas/<?php echo $fetch_cart['image']; ?>" alt="" class="image">
+        <div class="name"><?php echo $fetch_cart['name']; ?></div>
+        <div class="price">$<?php echo $fetch_cart['price']; ?>/-</div>
+        <form action="" method="post">
+                <input type="hidden" value="<?php echo $fetch_cart['id']; ?>" name="cart_id">
+                <input type="number" min="1" value="<?php echo $fetch_cart['quantity']; ?>" name="cart_quantity" class="qty">
+                <input type="submit" value="Acualizar" class="option-btn" name="update_quantity">
+        </form>
+        <div class="sub-total"> sub-total : <span>$<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
+        
+    </div>
 
 
-<?php
-    $grand_total += $sub_total;
+    <?php
+        $grand_total += $sub_total;
+        }
+    }else{
+        echo '<p class="empty">Tu carrito esta vacio</p>';
     }
-}else{
-      echo '<p class="empty">Tu carrito esta vacio</p>';
-}
-?>
-</div>
+    ?>
+    </div>
 
-<div class="cart
--total">
-    <p>Cuenta total : <span>$<?php echo $grand_total; ?>/-</span></p>
-    <a href="shop.php" class="option-btn">Continuar comprando</a>
-    <a href="cart
-    .php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>" onclick="return confirm('Desea vaciar la lista de deseos?');">Vaciar lista de deseos</a>
-</div>
+    <div class="more-btn">
+        <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>" onclick="return confirm('Desea eliminar todo del carrito?');">Vaciar carrito</a>
+    </div>
+
+    <div class="cart-total">
+        <p>Cuenta total : <span>$<?php echo $grand_total; ?>/-</span></p>
+        <a href="shop.php" class="option-btn">Continuar comprando</a>
+        <a href="cart
+        .php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>">Iniciar el pago</a>
+    </div>
 
 </section>
 
