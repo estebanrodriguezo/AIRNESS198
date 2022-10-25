@@ -39,6 +39,13 @@
 *::-webkit-scrollbar-thumb{
    background-color: var(--black);
 }
+
+.image-wrapper img {
+   max-width: 80%;
+   max-height: 80%;
+ }
+
+
 a:hover{
    text-decoration: none;
    color: var(--white);
@@ -164,7 +171,8 @@ section{
 }
 
 .heading p a{
-   color:var(--black);
+   color: var(--white);
+   
 }
 
 .heading p a:hover{
@@ -248,11 +256,15 @@ section{
    align-items: center;
    justify-content: space-between;
    padding:1.5rem 2rem;
-   max-width: 1200px;
+   max-width: 1000px;
+   max-height: 70px;
    position: relative;
 }
+
+
+
 .header{
-   background-color: black;
+   background-color:black;
 
 }
 
@@ -286,7 +298,7 @@ section{
 .header .flex .navbar ul li ul{
    position: absolute;
    left:0;
-   width: 15rem;
+   width: 17rem;
    background-color: var(--white);
    animation: fadeIn .2s linear;
    display: none;
@@ -575,58 +587,6 @@ section{
 .about .flex:nth-child(2){
    margin:3rem auto;
    flex-wrap: wrap-reverse;
-}
-
-.reviews .box-container{
-   max-width: 1200px;
-   margin:0 auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
-   justify-content: center;
-}
-
-.reviews .box-container .box{
-   padding:2rem;
-   text-align: center;
-   background-color: var(--white);
-   box-shadow: var(--box-shadow);
-   border:var(--border);
-   border-radius: .5rem;
-}
-
-.reviews .box-container .box img{
-   height: 10rem;
-   width: 10rem;
-   border-radius: 50%;
-}
-
-.reviews .box-container .box p{
-   padding:1rem 0;
-   font-size: 1.5rem;
-   color:var(--light-color);
-   line-height: 2;
-}
-
-.reviews .box-container .box .stars{
-   display: inline-block;
-   background: var(--light-bg);
-   border-radius: .5rem;
-   padding:1rem 1.5rem;
-   border:var(--border);
-}
-
-.reviews .box-container .box .stars i{
-   color:var(--orange);
-   font-size: 1.7rem;
-   margin:0 .3rem;
-}
-
-.reviews .box-container .box h3{
-   font-size: 2rem;
-   color:var(--black);
-   margin-top: 1rem;
 }
 
 .contact form{
@@ -1053,21 +1013,6 @@ section{
    color:var(--black);
 }
 
-.footer .credit{
-   text-align: center;
-   padding-top: 2.5rem;
-   margin-top: 2.5rem;
-   border-top: var(--border);
-   font-size: 2rem;
-   color:var(--light-color);
-}
-
-.footer .credit span{
-   color:var(--black);
-}
-
-
-
 
 
 
@@ -1110,7 +1055,7 @@ section{
 
    .header .flex .navbar ul li{
       width: 100%;
-      padding:.5rem;
+      padding:.7rem;
    }
 
    .header .flex .navbar ul li ul{
@@ -1122,6 +1067,7 @@ section{
 
    .header .flex .navbar ul li ul li{
       padding-left: 2rem;
+      padding-right: 2rem;
    }
 
    .home .content h3{
