@@ -17,7 +17,7 @@ if(isset($_POST['order'])){
     $number = mysqli_real_escape_string($conn, $_POST['number']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $method = mysqli_real_escape_string($conn, $_POST['method']);
-    $address = mysqli_real_escape_string($conn, 'flat no. '. $_POST['flat'].', '. $_POST['street'].', '. $_POST['city'].', '. $_POST['country'].' - '. $_POST['pin_code']);
+    $address = mysqli_real_escape_string($conn,  $_POST['flat'].', '. $_POST['street'].', '. $_POST['city'].', '. $_POST['country'].' - '. $_POST['pin_code']);
     $placed_on = date('d-M-Y');
 
     $cart_total = 0;
@@ -117,9 +117,9 @@ if(isset($_POST['order'])){
                 <div class="inputBox">
                     <span>Metodo de pago :</span>
                     <select name="method">
-                        <option value="cash on delivery">Pago contra-entrega</option>
-                        <option value="credit card">Tarjeta de credito</option>                        
-                        <option value="debit card">Tarjeta de debito</option>
+                        <option value="pago contra-entrega">Pago contra-entrega</option>
+                        <option value="tarjeta de credito">Tarjeta de credito</option>                        
+                        <option value="tarjeta de debito">Tarjeta de debito</option>
                         <option value="paypal">Paypal</option>
                     </select>
                 </div>
