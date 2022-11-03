@@ -156,10 +156,21 @@ if(isset($_POST['add_to_cart'])){
 <!-- AGREGAR INFORMACION DE ROPA DE HOMBRE Y MUJER -->
 
 <section class="men">
-    <h3 class="title">HOMBRES</h3>  
+    <h3 class="title">HOMBRES</h3> 
+    
+    <img src="./imagenes/Hombre/STW MAN.jpg" alt="">
+    <img src="./imagenes/Hombre/STW2.jpg" alt="">
+    <img src="./imagenes/Hombre/STW3.jpg" alt="">
+
+
+
 </section>
 <section class="women">
     <h3 class="title">MUJERES</h3>  
+    <img src="./imagenes/Mujer/STW7.jpg" alt="">
+    <img src="./imagenes/Mujer/STW8.jpg" alt="">
+    <img src="./imagenes/Mujer/STW9.jpg" alt="">
+
 </section>
 
 
