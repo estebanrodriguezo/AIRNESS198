@@ -91,7 +91,7 @@ if(isset($_GET['delete_all'])){
     <a href="view_page.php?pid=<?php echo $fetch_wishlist['pid']; ?>" class="fas fa-eye"></a>
     <img src="imagenes_subidas/<?php echo $fetch_wishlist['image']; ?>" alt="" class="image">
     <div class="name"><?php echo $fetch_wishlist['name']; ?></div>
-    <div class="price">$<?php echo $fetch_wishlist['price']; ?>/-</div>
+    <div class="price">COP <?php echo $fetch_wishlist['price']; ?>/-</div>
     <input type="hidden" name="product_id" value="<?php echo $fetch_wishlist['pid']; ?>">
     <input type="hidden" name="product_name" value="<?php echo $fetch_wishlist['name']; ?>">
     <input type="hidden" name="product_price" value="<?php echo $fetch_wishlist['price']; ?>">
@@ -111,7 +111,7 @@ if(isset($_GET['delete_all'])){
     </div>
 
     <div class="wishlist-total">
-        <p>Cuenta total : <span>$<?php echo $grand_total; ?>/-</span></p>
+        <p>Cuenta total : <span>COP <?php echo $grand_total; ?>/-</span></p>
         <a href="shop.php" class="option-btn">Continuar comprando</a>
         <a href="wishlist.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>" onclick="return confirm('Desea vaciar la lista de deseos?');">Vaciar lista de deseos</a>
     </div>

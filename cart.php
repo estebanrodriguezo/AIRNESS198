@@ -76,13 +76,13 @@ if(isset($_POST['update_quantity'])){
         <a href="view_page.php?pid=<?php echo $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
         <img src="imagenes_subidas/<?php echo $fetch_cart['image']; ?>" alt="" class="image">
         <div class="name"><?php echo $fetch_cart['name']; ?></div>
-        <div class="price">$<?php echo $fetch_cart['price']; ?>/-</div>
+        <div class="price">COP <?php echo $fetch_cart['price']; ?>/-</div>
         <form action="" method="post">
                 <input type="hidden" value="<?php echo $fetch_cart['id']; ?>" name="cart_id">
                 <input type="number" min="1" value="<?php echo $fetch_cart['quantity']; ?>" name="cart_quantity" class="qty">
                 <input type="submit" value="Acualizar" class="option-btn" name="update_quantity">
         </form>
-        <div class="sub-total"> sub-total : <span>$<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
+        <div class="sub-total"> sub-total : <span>COP <?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
         
     </div>
 
@@ -101,7 +101,7 @@ if(isset($_POST['update_quantity'])){
     </div>
 
     <div class="cart-total">
-        <p>Cuenta total : <span>$<?php echo $grand_total; ?>/-</span></p>
+        <p>Cuenta total : <span>COP <?php echo $grand_total; ?>/-</span></p>
         <a href="shop.php" class="option-btn">Continuar comprando</a>
         <a href="checkout.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>">Iniciar el pago</a>
     </div>
