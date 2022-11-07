@@ -46,6 +46,7 @@
  }
 
 
+
 a:hover{
    text-decoration: none;
    color: var(--white);
@@ -962,16 +963,23 @@ section{
 
 
 .men{
-   background-color: black;
-   
+   background-color: black;   
+   text-align: center;
+}
+
+.men img{
+   box-shadow: 10px 5px 5px rgba(255, 255, 255, 0.134);
+   margin: 0.5rem;
 }
 
 .women{
    background-color: white;
+   text-align: center;
 }
-
-
-
+.women img{
+   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.156);
+   margin: 0.5rem;
+}
 
 
 .footer{
