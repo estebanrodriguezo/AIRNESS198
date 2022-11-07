@@ -57,7 +57,7 @@ if(!isset($user_id)){
         <p> direccion : <span><?php echo $fetch_orders['address']; ?></span> </p>
         <p> metodo de pago : <span><?php echo $fetch_orders['method']; ?></span> </p>
         <p> tus pedidos : <span><?php echo $fetch_orders['total_products']; ?></span> </p>
-        <p> precio total : <span>$<?php echo $fetch_orders['total_price']; ?>/-</span> </p>
+        <p> precio total : <span>COP <?php echo $fetch_orders['total_price']; ?>/-</span> </p>
         <p> estado de pago : <span style="color:<?php if($fetch_orders['payment_status'] == 'pendiente'){echo 'tomato'; }else{echo 'green';} ?>"><?php echo $fetch_orders['payment_status']; ?></span> </p>
     </div>
     <?php

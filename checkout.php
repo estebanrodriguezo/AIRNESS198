@@ -85,14 +85,14 @@ if(isset($_POST['order'])){
             $total_price = ($fetch_cart['price'] * $fetch_cart['quantity']);
             $grand_total += $total_price;
     ?>    
-    <p> <?php echo $fetch_cart['name'] ?> <span>(<?php echo '$'.$fetch_cart['price'].'/-'.' x '.$fetch_cart['quantity']  ?>)</span> </p>
+    <p> <?php echo $fetch_cart['name'] ?> <span>(<?php echo 'COP '.$fetch_cart['price'].'/-'.' x '.$fetch_cart['quantity']  ?>)</span> </p>
     <?php
         }
         }else{
             echo '<p class="empty">El carrito esta vacio!</p>';
         }
     ?>
-    <div class="grand-total">cuenta total : <span>$<?php echo $grand_total; ?>/-</span></div>
+    <div class="grand-total">cuenta total : <span>COP <?php echo $grand_total; ?>/-</span></div>
 </section>
 
 
@@ -104,15 +104,15 @@ if(isset($_POST['order'])){
             <div class="flex">
                 <div class="inputBox">
                     <span>Tu nombre :</span>
-                    <input type="text" name="name" placeholder="Ingresa tu nombre">
+                    <input type="text" name="name" placeholder="Ingresa tu nombre" required>
                 </div>
                 <div class="inputBox">
                     <span>Tu celular :</span>
-                    <input type="number" name="number" min="0" placeholder="Ingresa tu numero de celular">
+                    <input type="number" name="number" min="0" placeholder="Ingresa tu numero de celular" required>
                 </div>
                 <div class="inputBox">
                     <span>Tu correo :</span>
-                    <input type="email" name="email" placeholder="Ingresa tu correo electronico">
+                    <input type="email" name="email" placeholder="Ingresa tu correo electronico" required>
                 </div>
                 <div class="inputBox">
                     <span>Metodo de pago :</span>
@@ -125,27 +125,27 @@ if(isset($_POST['order'])){
                 </div>
                 <div class="inputBox">
                     <span>Direccion 01 :</span>
-                    <input type="text" name="flat" placeholder="ejemplo: Edificio, Conjunto recidencial, etc...">
+                    <input type="text" name="flat" placeholder="ejemplo: Edificio, Conjunto recidencial, etc..." required>
                 </div>
                 <div class="inputBox">
                     <span>Direccion 02 :</span>
-                    <input type="text" name="street" placeholder="ejemplo: calle #32a 80 -18.">
+                    <input type="text" name="street" placeholder="ejemplo: calle #32a 80 -18." required>
                 </div>
                 <div class="inputBox">
                     <span>Ciudad :</span>
-                    <input type="text" name="city" placeholder="ejemplo: popayan">
+                    <input type="text" name="city" placeholder="ejemplo: popayan" required>
                 </div>
                 <div class="inputBox">
                     <span>Departamento :</span>
-                    <input type="text" name="state" placeholder="ejemplo: cauca">
+                    <input type="text" name="state" placeholder="ejemplo: cauca" required>
                 </div>
                 <div class="inputBox">
                     <span>Pais :</span>
-                    <input type="text" name="country" placeholder="ejemplo: colombia">
+                    <input type="text" name="country" placeholder="ejemplo: colombia" required>
                 </div>
                 <div class="inputBox">
                     <span>Codigo postal :</span>
-                    <input type="number" min="0" name="pin_code" placeholder="ejemplo: 52006">
+                    <input type="number" min="0" name="pin_code" placeholder="ejemplo: 52006" required>
                 </div>
             </div>
             <input type="submit" name="order" value="Ordenar ahora!" class="btn">
