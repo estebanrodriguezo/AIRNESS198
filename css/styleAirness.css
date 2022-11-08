@@ -970,6 +970,7 @@ section{
 .men img{
    box-shadow: 10px 5px 5px rgba(255, 255, 255, 0.134);
    margin: 0.5rem;
+   width: 25%;
 }
 
 .women{
@@ -979,6 +980,8 @@ section{
 .women img{
    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.156);
    margin: 0.5rem;
+   width: 25%;
+
 }
 
 
